@@ -31,7 +31,15 @@ const initializeDbServer = async () => {
             )
         `);
 
-        // const productDetails = [
+        //  const productDetails = [
+        //     {
+        //         title: "kamal",
+        //         image: "https://res.cloudinary.com/dlh8nimmr/image/upload/v1713095103/SIPR04018_01_1_xi3vhf.png",
+        //         price: "4899",
+        //         off: "(50% Off)",
+        //         orginalprice: "₹8999",
+        //         category: "Kamal"  
+        //     }
 
         //             // {
         //             //     title: "The Brown Metro Movers",
@@ -236,9 +244,9 @@ app.listen(PORT, () => {
 });
 
 
-app.get("/", async(req, res) => {
-    const data = `SELECT * FROM products`
-    const result = await db.all(data)
-    console.log(result)
-    res.send(result)
-})
+// app.get("/", async(req, res) => {
+//     const data = `SELECT * FROM products`
+//     const result = await db.all(data)
+//     console.log(result)
+//     res.send(result)
+// })
