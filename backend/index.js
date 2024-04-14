@@ -244,9 +244,9 @@ app.listen(PORT, () => {
 });
 
 
-// app.get("/", async(req, res) => {
-//     const data = `SELECT * FROM products`
-//     const result = await db.all(data)
-//     console.log(result)
-//     res.send(result)
-// })
+app.get("/", async(req, res) => {
+    const data = `SELECT * FROM products`
+    const result = await db.all(data)
+    console.log(result)
+    res.send(result)
+})
